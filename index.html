@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEATHER APP</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="main-container">
+
+    <div class="header">
+      Priyanka's Weather App
+    </div>
+
+    <div class="wrapper">
+      <div class="left-container">
+        <div class="left-table">
+
+          <div class="tbl-header">
+            <button class="tblbtn" onclick="weatherInfo()">Get Weather</button>
+          </div>
+
+          <div class="city-name">
+            <span class="ct">City</span>
+            <span class="ctn">London</span>
+            <span class="ctn">New York</span>
+            <span class="ctn">Los Angeles</span>
+            <span class="ctn">Las Vegas</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="right-container">
+
+        <div class="srch-data">
+          <input type="text" id="input" placeholder="City Name" />
+          <button class="search" onclick="highlight()">Search</button>
+        </div>
+
+        <div class="right-table">
+
+          <table class="tbl-data" border="1">
+            <thead class="tbl-data">
+
+              <tr class="tbl-row">
+                <th class="t-data1">City</th>
+                <th class="t-data1">Description</th>
+                <th class="t-data1">Temperature(°C)</th>
+                <th class="t-data1">Pressure(hPa)</th>
+                <th class="t-data1">Date age (hrs)</th>
+                <th class="t-data1"></th>
+              </tr>
+
+            </thead>
+            <tbody id="tbl-body"></tbody>
+          </table>
+
+          <h2 id="no-data">No data</h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
